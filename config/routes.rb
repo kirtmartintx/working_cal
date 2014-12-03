@@ -1,6 +1,7 @@
 CalendarExample::Application.routes.draw do
+  devise_for :users
   resource :calendar, only: [:show], controller: :calendar
-  root to: "calendar#show"
+  root to: "calender#show"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
